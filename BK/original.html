@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+		<title>Neurologia – Clínica Sonne1 - Clínica Sonne</title><link rel="preload" data-rocket-preload as="image" href="https://clinicasonne.com.br/wp-content/uploads/2024/04/52c04082-bg_10000002j00u0028000028.png" fetchpriority="high"><link rel="preload" data-rocket-preload as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /></noscript>
+
+		<!-- All in One SEO 4.9.6.2 - aioseo.com -->
+	<meta name="description" content="Excelência em Neurologia:Cuidado médico de referência que a sua saúde exige. Corpo clínico altamente especializado e tecnologia avançada para uma investigação clínica completa e acolhedora. Quero agendar uma consulta Fique atento para sintomas como: desequilíbrio, paralisia, fraqueza, dormência, pálpebra caída, visão dupla, engasgos frequentes, tremores, falta de coordenação ou perda muscular. Não deixe para depois," />
+	<meta name="robots" content="max-image-preview:large" />
+	<meta name="google-site-verification" content="CMY68oUdwRSuhw-gOk4AWP-N3a6IB_A8EeXqqexEMZs" />
+	<link rel="canonical" href="https://clinicasonne.com.br/neurologia/" />
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.9.6.2" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:site_name" content="Clínica Sonne - Neurologia Premium" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Neurologia – Clínica Sonne1 - Clínica Sonne" />
+		<meta property="og:description" content="Excelência em Neurologia:Cuidado médico de referência que a sua saúde exige. Corpo clínico altamente especializado e tecnologia avançada para uma investigação clínica completa e acolhedora. Quero agendar uma consulta Fique atento para sintomas como: desequilíbrio, paralisia, fraqueza, dormência, pálpebra caída, visão dupla, engasgos frequentes, tremores, falta de coordenação ou perda muscular. Não deixe para depois," />
+		<meta property="og:url" content="https://clinicasonne.com.br/neurologia/" />
+		<meta property="article:published_time" content="2024-04-04T11:00:25+00:00" />
+		<meta property="article:modified_time" content="2026-06-15T17:17:52+00:00" />
+		<meta property="article:publisher" content="https://www.facebook.com/profile.php?id=100091332262506" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Neurologia – Clínica Sonne1 - Clínica Sonne" />
+		<meta name="twitter:description" content="Excelência em Neurologia:Cuidado médico de referência que a sua saúde exige. Corpo clínico altamente especializado e tecnologia avançada para uma investigação clínica completa e acolhedora. Quero agendar uma consulta Fique atento para sintomas como: desequilíbrio, paralisia, fraqueza, dormência, pálpebra caída, visão dupla, engasgos frequentes, tremores, falta de coordenação ou perda muscular. Não deixe para depois," />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/clinicasonne.com.br\/neurologia\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br#listItem","position":1,"name":"Home","item":"https:\/\/clinicasonne.com.br","nextItem":{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br\/neurologia\/#listItem","name":"Neurologia &#8211; Cl\u00ednica Sonne1"}},{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br\/neurologia\/#listItem","position":2,"name":"Neurologia &#8211; Cl\u00ednica Sonne1","previousItem":{"@type":"ListItem","@id":"https:\/\/clinicasonne.com.br#listItem","name":"Home"}}]},{"@type":"Organization","@id":"https:\/\/clinicasonne.com.br\/#organization","name":"Cl\u00ednica Sonne","description":"Neurologia Premium","url":"https:\/\/clinicasonne.com.br\/","telephone":"+5519996283086","sameAs":["https:\/\/www.facebook.com\/profile.php?id=100091332262506","https:\/\/www.instagram.com\/clinicasonne\/","https:\/\/www.youtube.com\/@ClinicaSonne","https:\/\/www.linkedin.com\/in\/fabrcio-castro-de-borba-76670728\/"]},{"@type":"WebPage","@id":"https:\/\/clinicasonne.com.br\/neurologia\/#webpage","url":"https:\/\/clinicasonne.com.br\/neurologia\/","name":"Neurologia \u2013 Cl\u00ednica Sonne1 - Cl\u00ednica Sonne","description":"Excel\u00eancia em Neurologia:Cuidado m\u00e9dico de refer\u00eancia que a sua sa\u00fade exige. Corpo cl\u00ednico altamente especializado e tecnologia avan\u00e7ada para uma investiga\u00e7\u00e3o cl\u00ednica completa e acolhedora. Quero agendar uma consulta Fique atento para sintomas como: desequil\u00edbrio, paralisia, fraqueza, dorm\u00eancia, p\u00e1lpebra ca\u00edda, vis\u00e3o dupla, engasgos frequentes, tremores, falta de coordena\u00e7\u00e3o ou perda muscular. N\u00e3o deixe para depois,","inLanguage":"pt-BR","isPartOf":{"@id":"https:\/\/clinicasonne.com.br\/#website"},"breadcrumb":{"@id":"https:\/\/clinicasonne.com.br\/neurologia\/#breadcrumblist"},"datePublished":"2024-04-04T08:00:25-03:00","dateModified":"2026-06-15T14:17:52-03:00"},{"@type":"WebSite","@id":"https:\/\/clinicasonne.com.br\/#website","url":"https:\/\/clinicasonne.com.br\/","name":"Cl\u00ednica Sonne","description":"Neurologia Premium","inLanguage":"pt-BR","publisher":{"@id":"https:\/\/clinicasonne.com.br\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><!-- Tag do Google (gtag.js) modo de consentimento dataLayer adicionado pelo Site Kit -->
+<script type="rocketlazyloadscript" id="google_gtagjs-js-consent-mode-data-layer">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500});
+window._googlesitekitConsentCategoryMap = {"statistics":["analytics_storage"],"marketing":["ad_storage","ad_user_data","ad_personalization"],"functional":["functionality_storage","security_storage"],"preferences":["personalization_storage"]};
+window._googlesitekitConsents = {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500};
+</script>
+<!-- Fim da tag do Google (gtag.js) modo de consentimento dataLayer adicionado pelo Site Kit -->
+		<script type="rocketlazyloadscript">
+		(function(){
+			window.ecsSchemeConfig={systemAuto:false};
+			var m=document.cookie.match(/(?:^|;\s*)ecs_color_scheme=([^;]+)/);
+			if(m&&m[1]==='alt'){
+				document.documentElement.setAttribute('data-ecs-scheme','alt');
+			}else if(!m&&false){
+				if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches){
+					document.documentElement.setAttribute('data-ecs-scheme','alt');
+				}
+			}
+		})();
+		</script>
+		<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Feed para Clínica Sonne &raquo;" href="https://clinicasonne.com.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Clínica Sonne &raquo;" href="https://clinicasonne.com.br/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://clinicasonne.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclinicasonne.com.br%2Fneurologia%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://clinicasonne.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclinicasonne.com.br%2Fneurologia%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link data-minify="1" rel='stylesheet' id='aioseo/css/src/vue/standalone/blocks/table-of-contents/global.scss-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/all-in-one-seo-pack/dist/Lite/assets/css/table-of-contents/global.e90f6d47.css?ver=1781830671' media='all' />
+<link data-minify="1" rel='stylesheet' id='nta-css-popup-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/wp-whatsapp/assets/dist/css/style.css?ver=1781830671' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='https://clinicasonne.com.br/wp-content/themes/hello-elementor/style.min.css?ver=3.0.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://clinicasonne.com.br/wp-content/themes/hello-elementor/theme.min.css?ver=3.0.1' media='all' />
+<link data-minify="1" rel='stylesheet' id='ecs-color-scheme-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/modules/color-scheme/assets/css/ecs-color-scheme.css?ver=1781830671' media='all' />
+<link data-minify="1" rel='stylesheet' id='ecs-container-layout-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/modules/container-layout/assets/css/ecs-container-layout.css?ver=1781830671' media='all' />
+<link data-minify="1" rel='stylesheet' id='swiper-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1781830671' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='https://clinicasonne.com.br/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=4.0.7' media='all' />
+<link data-minify="1" rel='stylesheet' id='ecs-mobile-menu-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/modules/mobile-menu/assets/css/ecs-mobile-menu.css?ver=1781830671' media='all' />
+<link data-minify="1" rel='stylesheet' id='ecs-editorial-text-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/modules/editorial-text/assets/css/ecs-editorial-text.css?ver=1781830671' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1781830671' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://clinicasonne.com.br/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1781830670' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css' href='https://clinicasonne.com.br/wp-content/uploads/elementor/css/post-6.css?ver=1781830670' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://clinicasonne.com.br/wp-content/uploads/elementor/css/custom-pro-frontend.min.css?ver=1781830670' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://clinicasonne.com.br/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.0.7' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://clinicasonne.com.br/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.0.7' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://clinicasonne.com.br/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.0.7' media='all' />
+<link rel='stylesheet' id='widget-menu-anchor-css' href='https://clinicasonne.com.br/wp-content/plugins/elementor/assets/css/widget-menu-anchor.min.css?ver=4.0.7' media='all' />
+<link rel='stylesheet' id='widget-image-box-css' href='https://clinicasonne.com.br/wp-content/uploads/elementor/css/custom-widget-image-box.min.css?ver=1781830670' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='https://clinicasonne.com.br/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=4.0.7' media='all' />
+<link rel='stylesheet' id='widget-google_maps-css' href='https://clinicasonne.com.br/wp-content/plugins/elementor/assets/css/widget-google_maps.min.css?ver=4.0.7' media='all' />
+<link rel='stylesheet' id='elementor-post-2186-css' href='https://clinicasonne.com.br/wp-content/uploads/elementor/css/post-2186.css?ver=1781832908' media='all' />
+<link data-minify="1" rel='stylesheet' id='ecs-styles-css' href='https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/assets/css/ecs-style.css?ver=1781830671' media='all' />
+<link rel='stylesheet' id='elementor-post-58-css' href='https://clinicasonne.com.br/wp-content/uploads/elementor/css/post-58.css?ver=1699831987' media='all' />
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://clinicasonne.com.br/wp-content/plugins/turbo-cache/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+
+
+
+<script type="rocketlazyloadscript" id="jquery-core-js" data-rocket-src="https://clinicasonne.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-migrate-js" data-rocket-src="https://clinicasonne.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" data-rocket-defer defer></script>
+
+<!-- Snippet da tag do Google (gtag.js) adicionado pelo Site Kit -->
+<!-- Snippet do Google Analytics adicionado pelo Site Kit -->
+<script type="rocketlazyloadscript" id="google_gtagjs-js" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=GT-PL9Q9D6" async></script>
+<script type="rocketlazyloadscript" id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["clinicasonne.com.br"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-PL9Q9D6");
+//# sourceURL=google_gtagjs-js-after
+</script>
+<script id="ecs_ajax_load-js-extra">
+var ecs_ajax_params = {"ajaxurl":"https://clinicasonne.com.br/wp-admin/admin-ajax.php","posts":"{\"page\":0,\"pagename\":\"neurologia\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"neurologia\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"};
+//# sourceURL=ecs_ajax_load-js-extra
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="ecs_ajax_load-js" data-rocket-src="https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/assets/js/ecs_ajax_pagination.js?ver=1779200633" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="ecs-script-js" data-rocket-src="https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/assets/js/ecs.js?ver=1779200633" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://clinicasonne.com.br/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://clinicasonne.com.br/wp-json/wp/v2/pages/2186" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://clinicasonne.com.br/xmlrpc.php?rsd" />
+<meta name="generator" content="Site Kit by Google 1.181.0" /><script type="rocketlazyloadscript">(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"187178207", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><meta name="ti-site-data" content="eyJyIjoiMTowITc6MCEzMDowIiwibyI6Imh0dHBzOlwvXC9jbGluaWNhc29ubmUuY29tLmJyP3RpLW9ubGluZS11c2Vycy1nb29nbGU9MSZhbXA7cD0lMkZuZXVyb2xvZ2lhJTJGJmFtcDtfd3Bub25jZT1jNjFhZjc4YjUzIn0=" />
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to footer -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"webmaster"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script type="rocketlazyloadscript" data-cfasync="false" data-pagespeed-no-defer>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9T5BCM');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta name="generator" content="Elementor 4.0.7; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<meta name="google-site-verification" content="BejFQaPzh54HDHYGTYhrch0UwcPD_ZAne2-vX-ySZT8" />
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://clinicasonne.com.br/wp-content/uploads/2023/04/cropped-Sonne-neurologia-premium-logo1-e1682598891960-32x32.webp" sizes="32x32" />
+<link rel="icon" href="https://clinicasonne.com.br/wp-content/uploads/2023/04/cropped-Sonne-neurologia-premium-logo1-e1682598891960-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://clinicasonne.com.br/wp-content/uploads/2023/04/cropped-Sonne-neurologia-premium-logo1-e1682598891960-180x180.webp" />
+<meta name="msapplication-TileImage" content="https://clinicasonne.com.br/wp-content/uploads/2023/04/cropped-Sonne-neurologia-premium-logo1-e1682598891960-270x270.webp" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body data-rsssl=1 class="wp-singular page-template page-template-elementor_canvas page page-id-2186 wp-theme-hello-elementor elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-2186">
+			<div  data-elementor-type="wp-page" data-elementor-id="2186" class="elementor elementor-2186">
+				<div class="elementor-element elementor-element-2ad4124 e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="2ad4124" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-bca3b33 e-con-full e-ecs-flex e-flex e-con e-child" data-id="bca3b33" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-207a8a9 elementor-widget elementor-widget-spacer" data-id="207a8a9" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4bc20d0 elementor-widget elementor-widget-image" data-id="4bc20d0" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="430" height="130" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/affc961f-01-logo-principal-cor_10by03o0by03m000000028.png" class="attachment-large size-large wp-image-2148" alt="" srcset="https://clinicasonne.com.br/wp-content/uploads/2024/04/affc961f-01-logo-principal-cor_10by03o0by03m000000028.png 430w, https://clinicasonne.com.br/wp-content/uploads/2024/04/affc961f-01-logo-principal-cor_10by03o0by03m000000028-300x91.png 300w" sizes="(max-width: 430px) 100vw, 430px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-f877b95 elementor-widget elementor-widget-heading" data-id="f877b95" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><b>Excelência em Neurologia:</b><br>Cuidado médico de referência que a sua saúde exige. </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-03d4627 elementor-widget elementor-widget-heading" data-id="03d4627" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Corpo clínico altamente especializado e tecnologia avançada para uma investigação clínica completa e acolhedora.</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0ed0b4a elementor-widget elementor-widget-button" data-id="0ed0b4a" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5519996283086?text=%28G04%29+-+Ol%C3%A1%2C+gostaria+de+ser+atendido%21&#038;utm_source=LPneuro">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero agendar uma consulta</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-95e68f4 elementor-widget elementor-widget-spacer" data-id="95e68f4" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-387a975 e-con-full e-ecs-flex e-flex e-con e-child" data-id="387a975" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2c83a8d e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="2c83a8d" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-33c1ada e-con-full e-ecs-flex e-flex e-con e-child" data-id="33c1ada" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-8abaeb3 elementor-widget elementor-widget-spacer" data-id="8abaeb3" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-da978eb elementor-hidden-desktop elementor-hidden-mobile elementor-widget elementor-widget-spacer" data-id="da978eb" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0e116ea elementor-widget elementor-widget-image" data-id="0e116ea" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="669" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/d321c509-agrupar-3_10xg0ry000000000000028-1024x856.png" class="attachment-large size-large wp-image-2189" alt="" srcset="https://clinicasonne.com.br/wp-content/uploads/2024/04/d321c509-agrupar-3_10xg0ry000000000000028-1024x856.png 1024w, https://clinicasonne.com.br/wp-content/uploads/2024/04/d321c509-agrupar-3_10xg0ry000000000000028-300x251.png 300w, https://clinicasonne.com.br/wp-content/uploads/2024/04/d321c509-agrupar-3_10xg0ry000000000000028-768x642.png 768w, https://clinicasonne.com.br/wp-content/uploads/2024/04/d321c509-agrupar-3_10xg0ry000000000000028.png 1204w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d3ae2b9 e-con-full e-ecs-flex e-flex e-con e-child" data-id="d3ae2b9" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-aed9c84 elementor-widget elementor-widget-menu-anchor" data-id="aed9c84" data-element_type="widget" data-e-type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-menu-anchor" id="primeirobotao"></div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-7b663f5 elementor-widget elementor-widget-spacer" data-id="7b663f5" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0876634 elementor-widget elementor-widget-heading" data-id="0876634" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Fique atento para sintomas como: desequilíbrio, paralisia, fraqueza, dormência, pálpebra caída, visão dupla, engasgos frequentes, tremores, falta de coordenação ou perda muscular.
+<br> <br>
+<b>Não deixe para depois, procure agora mesmo nossos especialistas!</b></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1a86ee7 elementor-widget elementor-widget-button" data-id="1a86ee7" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5519996283086?text=%28G04%29+-+Ol%C3%A1%2C+gostaria+de+ser+atendido%21">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="icon icon-whatsapp-1"></i>			</span>
+									<span class="elementor-button-text">Agendar uma consulta agora</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-a1be10b elementor-widget elementor-widget-heading" data-id="a1be10b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">A Clínica Sonne é uma <b>clínica especializada em neurologia,</b> projetada para proporcionar um diagnóstico preciso e o tratamento mais adequado para questões relacionadas à neurologia e saúde mental.</h2>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-44eb957 e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="44eb957" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-643e3f3 e-con-full e-ecs-flex e-flex e-con e-child" data-id="643e3f3" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-569862e e-con-full e-ecs-flex e-flex e-con e-child" data-id="569862e" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-727c5bf elementor-widget elementor-widget-image" data-id="727c5bf" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2151" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/21441d78278fb4dd2d84c5a5cdb211d906caf5aa_hq-1.gif" /><noscript><img decoding="async" width="500" height="500" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/21441d78278fb4dd2d84c5a5cdb211d906caf5aa_hq-1.gif" class="attachment-large size-large wp-image-2151" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-1e244f6 elementor-widget elementor-widget-heading" data-id="1e244f6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><b>Como funciona</b>:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-eae0d27 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="eae0d27" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="100" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20200'%3E%3C/svg%3E" class="attachment-full size-full wp-image-2153" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/Novo-Projeto-6.png" /><noscript><img loading="lazy" decoding="async" width="100" height="200" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/Novo-Projeto-6.png" class="attachment-full size-full wp-image-2153" alt="" /></noscript></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">A primeira consulta é um momento atencioso com o médico especialista para avaliar os sintomas apresentados.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a65fdf9 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="a65fdf9" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="144" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%20200'%3E%3C/svg%3E" class="attachment-full size-full wp-image-2156" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/Novo-Projeto-7-1.png" /><noscript><img loading="lazy" decoding="async" width="144" height="200" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/Novo-Projeto-7-1.png" class="attachment-full size-full wp-image-2156" alt="" /></noscript></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">Serão solicitados exames que podem ser efetuados na nossa própria clínica.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-18b739a elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="18b739a" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="144" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%20200'%3E%3C/svg%3E" class="attachment-full size-full wp-image-2157" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/Novo-Projeto-8-1.png" /><noscript><img loading="lazy" decoding="async" width="144" height="200" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/Novo-Projeto-8-1.png" class="attachment-full size-full wp-image-2157" alt="" /></noscript></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">Posteriormente serão definidos os melhores tratamentos possíveis de uma forma participativa pelo paciente.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-96f681a elementor-align-center elementor-widget elementor-widget-button" data-id="96f681a" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5519996283086?text=%28G04%29+-+Ol%C3%A1%2C+gostaria+de+ser+atendido%21">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="icon icon-whatsapp-1"></i>			</span>
+									<span class="elementor-button-text">Quero agendar minha consulta</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-be83c9d elementor-widget elementor-widget-spacer" data-id="be83c9d" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-23b7582 e-con-full e-ecs-flex e-flex e-con e-child" data-id="23b7582" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7e5a70f e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="7e5a70f" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-c897e8b e-con-full e-ecs-flex e-flex e-con e-child" data-id="c897e8b" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-0c4e4c3 elementor-widget elementor-widget-spacer" data-id="0c4e4c3" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a1d7c5c elementor-widget elementor-widget-heading" data-id="a1d7c5c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Você já fez vários tratamentos e ainda não teve nenhuma solução?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-def6e87 elementor-widget elementor-widget-heading" data-id="def6e87" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Alguns desses tratamentos ineficazes são baseados em evidências científicas fracas ou não têm evidência científica alguma! Isso significa que você pode estar gastando tempo e dinheiro em um tratamento que não funciona.
+Sendo o profissional ideal para acompanhar doenças na terceira idade.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-82f1d7e elementor-widget elementor-widget-spacer" data-id="82f1d7e" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8810525 elementor-widget elementor-widget-heading" data-id="8810525" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Você tem um problema de saúde, mas não sabe qual é? </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8e01420 elementor-widget elementor-widget-heading" data-id="8e01420" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Mas isso não significa que você tem que viver com o seu problema de saúde sem saber o que está errado. Há uma solução para esse problema e ela se chama Clínica Sonne. Nós oferecemos um diagnóstico preciso para doenças desconhecidas através da utilização de uma tecnologia inovadora e exclusiva.Sendo o profissional ideal para acompanhar doenças na terceira idade.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5f77b5b elementor-widget elementor-widget-spacer" data-id="5f77b5b" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-493363f e-con-full e-ecs-flex e-flex e-con e-child" data-id="493363f" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-6be73c6 elementor-hidden-mobile elementor-widget elementor-widget-spacer" data-id="6be73c6" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-749ff1a elementor-widget elementor-widget-image" data-id="749ff1a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="532" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20532'%3E%3C/svg%3E" class="attachment-large size-large wp-image-3726" alt="" data-lazy-srcset="https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-1024x681.jpg 1024w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-300x200.jpg 300w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-768x511.jpg 768w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-1536x1022.jpg 1536w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-2048x1363.jpg 2048w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-1024x681.jpg" /><noscript><img loading="lazy" decoding="async" width="800" height="532" src="https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-1024x681.jpg" class="attachment-large size-large wp-image-3726" alt="" srcset="https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-1024x681.jpg 1024w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-300x200.jpg 300w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-768x511.jpg 768w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-1536x1022.jpg 1536w, https://clinicasonne.com.br/wp-content/uploads/2026/01/FZP_3759-2048x1363.jpg 2048w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-8a8fb8b e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="8a8fb8b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-0571224 e-grid e-ecs-flex e-con-boxed e-con e-child" data-id="0571224" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-de303cb elementor-widget elementor-widget-heading" data-id="de303cb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">A Clínica Sonne é uma clínica de tratamento eficaz que oferece soluções exclusivas para problemas de saúde neurológicos, com base na ciência mais recente.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d358bc8 elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="d358bc8" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2165" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/4e68a38d-0d35c97d-seta-baixo-branco-2-1-2.gif" /><noscript><img loading="lazy" decoding="async" width="500" height="500" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/4e68a38d-0d35c97d-seta-baixo-branco-2-1-2.gif" class="attachment-large size-large wp-image-2165" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-1fc1088 elementor-align-left elementor-widget elementor-widget-button" data-id="1fc1088" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5519996283086?text=%28G04%29+-+Ol%C3%A1%2C+gostaria+de+ser+atendido%21">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="icon icon-whatsapp-1"></i>			</span>
+									<span class="elementor-button-text">Começar o tratamento agora</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-c41dc15 elementor-widget elementor-widget-heading" data-id="c41dc15" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Depoimentos</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5b2ae9f elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="5b2ae9f" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 4"><figure class="swiper-slide-inner"><img width="719" height="182" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20719%20182'%3E%3C/svg%3E" alt="GeNSZyu" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/GeNSZyu.png" /><noscript><img width="719" height="182" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/GeNSZyu.png" alt="GeNSZyu" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 4"><figure class="swiper-slide-inner"><img width="702" height="185" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20702%20185'%3E%3C/svg%3E" alt="gfPx9BW" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/gfPx9BW.png" /><noscript><img width="702" height="185" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/gfPx9BW.png" alt="gfPx9BW" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 4"><figure class="swiper-slide-inner"><img width="734" height="144" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20734%20144'%3E%3C/svg%3E" alt="bnh1PKw" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/bnh1PKw.png" /><noscript><img width="734" height="144" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/bnh1PKw.png" alt="bnh1PKw" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 4"><figure class="swiper-slide-inner"><img width="697" height="115" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20697%20115'%3E%3C/svg%3E" alt="HNLivHw" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/HNLivHw.png" /><noscript><img width="697" height="115" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/HNLivHw.png" alt="HNLivHw" /></noscript></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-84aa406 e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="84aa406" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-75363a3 e-con-full e-ecs-flex e-flex e-con e-child" data-id="75363a3" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-59151f9 elementor-widget elementor-widget-heading" data-id="59151f9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Especialista Dr. Fabricio Borba</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6c7ccb5 elementor-widget elementor-widget-heading" data-id="6c7ccb5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O Dr. Fabrício busca praticar medicina com excelência técnica, aliada a um acolhimento do paciente como ser humano. Com formação em universidades conceituadas, Dr. Fabrício carrega em seu currículo experiências nacionais e internacionais</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ab003ff elementor-widget elementor-widget-image" data-id="ab003ff" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="667" height="33" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20667%2033'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2168" alt="" data-lazy-srcset="https://clinicasonne.com.br/wp-content/uploads/2024/04/252072c8-div_1000000000000000000028.png 667w, https://clinicasonne.com.br/wp-content/uploads/2024/04/252072c8-div_1000000000000000000028-300x15.png 300w" data-lazy-sizes="(max-width: 667px) 100vw, 667px" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/252072c8-div_1000000000000000000028.png" /><noscript><img loading="lazy" decoding="async" width="667" height="33" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/252072c8-div_1000000000000000000028.png" class="attachment-large size-large wp-image-2168" alt="" srcset="https://clinicasonne.com.br/wp-content/uploads/2024/04/252072c8-div_1000000000000000000028.png 667w, https://clinicasonne.com.br/wp-content/uploads/2024/04/252072c8-div_1000000000000000000028-300x15.png 300w" sizes="(max-width: 667px) 100vw, 667px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-9da8040 elementor-widget elementor-widget-text-editor" data-id="9da8040" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Residência Médica em Neurologia (UNICAMP)</span></p></li><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Residência Médica em Neurofisiologia Clínica e doenças neuromusculares (UNICAMP)</span></p></li><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Fellowship de curta duração &#8211; Doenças do Neurônio Motor (Sorbonne Université &#8211; Paris)</span></p></li><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Membro titular da Academia Brasileira de Neurologia</span></p></li><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Membro titular da Sociedade Brasileira de Neurofisiologia Clínica</span></p></li><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Membro da Academia Americana de Neurologia</span></p></li><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Médico pela Faculdade de Medicina de Marília</span></p></li><li dir="ltr"><p dir="ltr"><span data-darkreader-inline-color="">Doutorado em andamento em Neurociências (UNICAMP)</span></p></li></ul>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a82b836 elementor-align-left elementor-widget elementor-widget-button" data-id="a82b836" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5519996283086?text=%28G04%29+-+Ol%C3%A1%2C+gostaria+de+ser+atendido%21">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="icon icon-whatsapp-1"></i>			</span>
+									<span class="elementor-button-text">Começar o tratamento agora</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-19fa3bd e-con-full e-ecs-flex e-flex e-con e-child" data-id="19fa3bd" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-7322951 elementor-hidden-desktop elementor-hidden-mobile elementor-widget elementor-widget-spacer" data-id="7322951" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-af654b7 elementor-widget elementor-widget-image" data-id="af654b7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="508" height="696" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20508%20696'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2195" alt="" data-lazy-srcset="https://clinicasonne.com.br/wp-content/uploads/2024/04/a74e05eb-pers_10000000e40jc000000028.png 508w, https://clinicasonne.com.br/wp-content/uploads/2024/04/a74e05eb-pers_10000000e40jc000000028-219x300.png 219w" data-lazy-sizes="(max-width: 508px) 100vw, 508px" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/a74e05eb-pers_10000000e40jc000000028.png" /><noscript><img loading="lazy" decoding="async" width="508" height="696" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/a74e05eb-pers_10000000e40jc000000028.png" class="attachment-large size-large wp-image-2195" alt="" srcset="https://clinicasonne.com.br/wp-content/uploads/2024/04/a74e05eb-pers_10000000e40jc000000028.png 508w, https://clinicasonne.com.br/wp-content/uploads/2024/04/a74e05eb-pers_10000000e40jc000000028-219x300.png 219w" sizes="(max-width: 508px) 100vw, 508px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6c1facf e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="6c1facf" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-a242b56 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="a242b56" data-element_type="widget" data-e-type="widget" data-settings="{&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 5"><figure class="swiper-slide-inner"><img width="540" height="960" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20540%20960'%3E%3C/svg%3E" alt="2" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2025/06/2.svg" /><noscript><img width="540" height="960" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2025/06/2.svg" alt="2" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 5"><figure class="swiper-slide-inner"><img width="540" height="960" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20540%20960'%3E%3C/svg%3E" alt="3" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2025/06/3.svg" /><noscript><img width="540" height="960" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2025/06/3.svg" alt="3" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 5"><figure class="swiper-slide-inner"><img width="540" height="960" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20540%20960'%3E%3C/svg%3E" alt="4" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2025/06/4.svg" /><noscript><img width="540" height="960" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2025/06/4.svg" alt="4" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 5"><figure class="swiper-slide-inner"><img width="540" height="960" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20540%20960'%3E%3C/svg%3E" alt="5" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2025/06/5.svg" /><noscript><img width="540" height="960" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2025/06/5.svg" alt="5" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 5"><figure class="swiper-slide-inner"><img width="540" height="960" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20540%20960'%3E%3C/svg%3E" alt="6" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2025/06/6.svg" /><noscript><img width="540" height="960" decoding="async" class="swiper-slide-image" src="https://clinicasonne.com.br/wp-content/uploads/2025/06/6.svg" alt="6" /></noscript></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-816e7f5 e-ecs-flex e-flex e-con-boxed e-con e-child" data-id="816e7f5" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-fd0b921 elementor-align-center elementor-widget elementor-widget-button" data-id="fd0b921" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/5519996283086?text=%28G04%29+-+Ol%C3%A1%2C+gostaria+de+ser+atendido%21">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="icon icon-whatsapp-1"></i>			</span>
+									<span class="elementor-button-text">Começar o tratamento agora</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5d2ccba e-ecs-flex e-flex e-con-boxed e-con e-parent" data-id="5d2ccba" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-d0ccc62 e-con-full e-ecs-flex e-flex e-con e-child" data-id="d0ccc62" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-d9f6acf elementor-widget elementor-widget-spacer" data-id="d9f6acf" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b7124b3 elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="b7124b3" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="44" height="44" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2044%2044'%3E%3C/svg%3E" class="attachment-full size-full wp-image-2169" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/8c181e33-schedule-fill1-wght400-grad0-opsz48_1018018000000000000028.png" /><noscript><img loading="lazy" decoding="async" width="44" height="44" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/8c181e33-schedule-fill1-wght400-grad0-opsz48_1018018000000000000028.png" class="attachment-full size-full wp-image-2169" alt="" /></noscript></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">De segunda a sexta das 08:00 às 17:00 horas</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1b8937d elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="1b8937d" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="52" height="52" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2052'%3E%3C/svg%3E" class="attachment-full size-full wp-image-2170" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/86f8a0fc-localizacao-branco_101g01g000000000000028.png" /><noscript><img loading="lazy" decoding="async" width="52" height="52" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/86f8a0fc-localizacao-branco_101g01g000000000000028.png" class="attachment-full size-full wp-image-2170" alt="" /></noscript></figure><div class="elementor-image-box-content"><p class="elementor-image-box-description">Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3fa8c25 elementor-widget elementor-widget-image" data-id="3fa8c25" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="213" height="59" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20213%2059'%3E%3C/svg%3E" class="attachment-full size-full wp-image-2125" alt="" data-lazy-src="https://clinicasonne.com.br/wp-content/uploads/2024/04/02a5caca-logo-sonne.png" /><noscript><img loading="lazy" decoding="async" width="213" height="59" src="https://clinicasonne.com.br/wp-content/uploads/2024/04/02a5caca-logo-sonne.png" class="attachment-full size-full wp-image-2125" alt="" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7260cbf e-con-full e-ecs-flex e-flex e-con e-child" data-id="7260cbf" data-element_type="container" data-e-type="container" data-settings="{&quot;ecs_container_type&quot;:&quot;flex&quot;}">
+				<div class="elementor-element elementor-element-7c06e96 elementor-widget elementor-widget-google_maps" data-id="7c06e96" data-element_type="widget" data-e-type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-custom-embed">
+			<iframe loading="lazy"
+					src="about:blank"
+					title="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430"
+					aria-label="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430"
+			 data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://maps.google.com/maps?q=Edif%C3%ADcio%20Medplex%20-%20Av.%20Bar%C3%A3o%20de%20Itapura%2C%20610%20-%20Sala%20510%20-%20Taquaral%2C%20Campinas%20-%20SP%2C%2013020-430&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"></iframe><noscript><iframe loading="lazy"
+					src="https://maps.google.com/maps?q=Edif%C3%ADcio%20Medplex%20-%20Av.%20Bar%C3%A3o%20de%20Itapura%2C%20610%20-%20Sala%20510%20-%20Taquaral%2C%20Campinas%20-%20SP%2C%2013020-430&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+					title="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430"
+					aria-label="Edifício Medplex - Av. Barão de Itapura, 610 - Sala 510 - Taquaral, Campinas - SP, 13020-430"
+			></iframe></noscript>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript">
+(function(){
+  var utmString=(function(){
+    var params=['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+    var parts=[];
+    params.forEach(function(p){
+      var m=new RegExp('[?&]'+p+'=([^&#]*)').exec(location.href);
+      if(m) parts.push(p+'='+m[1]);
+    });
+    return parts.join('&');
+  })();
+
+  if(!utmString) return;
+
+  function patch(){
+    document.querySelectorAll('a[href*="wa.me"],a[href*="whatsapp.com"]').forEach(function(a){
+      if(a.dataset.u) return;
+
+      // Pega o href decodificando &amp; para &
+      var h = a.getAttribute('href').replace(/&amp;/g, '&');
+
+      // Remove UTMs duplicados que já existam
+      var params=['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+      params.forEach(function(p){
+        h = h.replace(new RegExp('[&?]'+p+'=[^&]*','g'),'');
+      });
+      h = h.replace(/&&+/g,'&').replace(/\?&/g,'?').replace(/[&?]$/,'');
+
+      // Adiciona UTMs limpos
+      h = h + (h.indexOf('?')>-1?'&':'?') + utmString;
+
+      a.setAttribute('href', h);
+      a.dataset.u='1';
+    });
+  }
+
+  patch();
+  document.addEventListener('DOMContentLoaded', patch);
+  window.addEventListener('load', patch);
+  new MutationObserver(patch).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
+<!-- GTM Container placement set to footer -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9T5BCM" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div  id="wa"></div>			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://clinicasonne.com.br","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="nta-wa-libs-js" data-rocket-src="https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/wp-whatsapp/assets/dist/js/njt-whatsapp.js?ver=1779200633" data-rocket-defer defer></script>
+<script id="nta-js-global-js-extra">
+var njt_wa_global = {"ajax_url":"https://clinicasonne.com.br/wp-admin/admin-ajax.php","nonce":"4255b4dd3a","defaultAvatarSVG":"\u003Csvg width=\"48px\" height=\"48px\" class=\"nta-whatsapp-default-avatar\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n            viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\"\u003E\n            \u003Cpath style=\"fill:#EDEDED;\" d=\"M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0\n            S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z\"/\u003E\n            \u003Cpath style=\"fill:#55CD6C;\" d=\"M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662\n            c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234\n            c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z\"/\u003E\n            \u003Cpath style=\"fill:#FEFEFE;\" d=\"M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297\n            c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048\n            c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359\n            c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248\n            c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062\n            l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945\"/\u003E\n        \u003C/svg\u003E","defaultAvatarUrl":"https://clinicasonne.com.br/wp-content/plugins/wp-whatsapp/assets/img/whatsapp_logo.svg","timezone":"America/Sao_Paulo","i18n":{"online":"Online","offline":"Offline"},"urlSettings":{"onDesktop":"api","onMobile":"api","openInNewTab":"ON"}};
+//# sourceURL=nta-js-global-js-extra
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="nta-js-global-js" data-rocket-src="https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/wp-whatsapp/assets/js/whatsapp-button.js?ver=1779200633" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="googlesitekit-consent-mode-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-86cb52dcb9f2b27ed244.js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="ecs-color-switcher-js" data-rocket-src="https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/modules/color-scheme/assets/js/ecs-color-switcher.js?ver=1779200633" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="swiper-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="elementor-webpack-runtime-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.0.7" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-modules-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.0.7" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-ui-core-js" data-rocket-src="https://clinicasonne.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":true}},"hasCustomBreakpoints":true},"version":"4.0.7","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/clinicasonne.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/clinicasonne.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/clinicasonne.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"9e43f80ce6","atomicFormsSendForm":"47901887b0"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"body_background_background":"gradient","global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":2186,"title":"Neurologia%20%E2%80%93%20Cl%C3%ADnica%20Sonne1%20-%20Cl%C3%ADnica%20Sonne","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.0.7" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="ecs-slider-js" data-rocket-src="https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/ele-custom-skin/modules/container-layout/assets/js/ecs-slider.js?ver=1779200633" data-rocket-defer defer></script>
+<script id="nta-js-popup-js-extra">
+var njt_wa = {"gdprStatus":"","accounts":[{"accountId":1991,"accountName":"","avatar":"","number":"+5519996283086","title":"Recep\u00e7\u00e3o","predefinedText":"Ol\u00e1! Visitei o site e quero falar com a recep\u00e7\u00e3o da Cl\u00ednica Sonne","willBeBackText":"I will be back in [njwa_time_work]","dayOffsText":"I will be back soon","isAlwaysAvailable":"ON","daysOfWeekWorking":{"sunday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"monday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"tuesday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"wednesday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"thursday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"friday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]},"saturday":{"isWorkingOnDay":"OFF","workHours":[{"startTime":"08:00","endTime":"17:30"}]}}}],"options":{"display":{"displayCondition":"showAllPage","includePages":[],"excludePages":[],"includePosts":[],"showOnDesktop":"ON","showOnMobile":"ON","time_symbols":"h:m"},"styles":{"title":"Atendimento Sonne","responseText":"Nossa equipe responde em alguns minutos.","description":"Seja bem-vindo(a) a nossa Cl\u00ednica!","backgroundColor":"#2db742","textColor":"#fff","titleSize":"18","accountNameSize":"14","descriptionTextSize":"12","regularTextSize":"11","scrollHeight":"500","isShowScroll":"OFF","isShowResponseText":"OFF","btnLabel":" Se precisar!\u003C/br\u003E Fale com a Recep\u00e7\u00e3o","btnLabelWidth":"156","btnPosition":"right","btnLeftDistance":"30","btnRightDistance":"30","btnBottomDistance":"30","isShowBtnLabel":"ON","isShowGDPR":"OFF","gdprContent":"Please accept our \u003Ca href=\"https://ninjateam.org/privacy-policy/\"\u003Eprivacy policy\u003C/a\u003E first to start a conversation.","isShowPoweredBy":"ON"},"analytics":{"enabledGoogle":"OFF","enabledFacebook":"OFF","enabledGoogleGA4":"OFF"}}};
+//# sourceURL=nta-js-popup-js-extra
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="nta-js-popup-js" data-rocket-src="https://clinicasonne.com.br/wp-content/cache/min/1/wp-content/plugins/wp-whatsapp/assets/js/whatsapp-popup.js?ver=1779200633" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="elementor-pro-webpack-runtime-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.7.3" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="wp-hooks-js" data-rocket-src="https://clinicasonne.com.br/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js" data-rocket-src="https://clinicasonne.com.br/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/clinicasonne.com.br\/wp-admin\/admin-ajax.php","nonce":"22eed0ab0a","urls":{"assets":"https:\/\/clinicasonne.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/clinicasonne.com.br\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/clinicasonne.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.7.3" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="pro-preloaded-elements-handlers-js" data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.7.3" data-rocket-defer defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script type="rocketlazyloadscript" data-no-minify="1" async data-rocket-src="https://clinicasonne.com.br/wp-content/plugins/turbo-cache/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
